@@ -38,7 +38,7 @@ export default function Testimonials() {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 px-6 bg-stone-50 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-transparent transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Placeholder */}
-        <div className="text-center py-16 bg-white rounded-lg border border-stone-200">
+        <div className="text-center py-16 bg-white/40 backdrop-blur-xl border border-white/60 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <p className="text-xl text-stone-600 font-serif mb-4">
             Client testimonials coming soon!
           </p>

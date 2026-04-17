@@ -26,7 +26,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white overflow-x-hidden">
+    <main className="relative min-h-screen bg-stone-50/50 overflow-x-hidden selection:bg-accent/20">
+      {/* Global Glassy Background Mesh */}
+      <div className="fixed inset-0 z-[-1] pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-accent/10 rounded-full blur-[120px] opacity-70" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-stone-300/40 rounded-full blur-[120px] opacity-70" />
+      </div>
       {/* Subtle scroll progress indicator */}
       <div
         className="fixed top-0 left-0 h-0.5 bg-gradient-to-r from-accent to-accent/50 z-50 transition-all duration-300"

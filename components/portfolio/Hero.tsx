@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 bg-white">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 bg-transparent">
       <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-stone-900 mb-6 leading-tight text-balance">

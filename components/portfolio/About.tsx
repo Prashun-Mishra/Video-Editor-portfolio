@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 px-6 bg-white transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-transparent transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="max-w-3xl mx-auto">
         {/* Section Label */}

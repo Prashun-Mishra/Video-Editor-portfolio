@@ -76,7 +76,7 @@ export default function Portfolio() {
     <section
       ref={sectionRef}
       id="portfolio"
-      className={`py-24 px-6 bg-white transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-transparent transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -92,13 +92,13 @@ export default function Portfolio() {
           {portfolioItems.map((item, index) => (
             <div
               key={item.id}
-              className={`group cursor-pointer transition-all duration-500 ${
+              className={`group cursor-pointer p-4 rounded-3xl bg-white/40 backdrop-blur-xl border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-lg aspect-square bg-stone-100">
+              <div className="relative overflow-hidden rounded-2xl aspect-[4/3] bg-stone-100/50">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -118,7 +118,7 @@ export default function Portfolio() {
               </div>
 
               {/* Info */}
-              <div className="mt-6">
+              <div className="mt-6 px-2 pb-2">
                 <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-2">
                   {item.category}
                 </p>

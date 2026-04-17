@@ -74,7 +74,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className={`py-24 px-6 bg-white transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-transparent transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
@@ -91,7 +91,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Contact Form */}
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-stone-900 mb-2">
@@ -194,7 +194,7 @@ export default function Contact() {
                 </h3>
 
                 {/* Email */}
-                <div className="mb-8 p-6 bg-stone-50 rounded-lg border border-stone-200 hover:border-accent transition-colors">
+                <div className="mb-8 p-6 bg-white/40 backdrop-blur-xl rounded-3xl border border-white/60 hover:border-accent/40 shadow-sm transition-colors">
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                     <div>
@@ -210,7 +210,7 @@ export default function Contact() {
                 </div>
 
                 {/* Social Links */}
-                <div className="mb-8 p-6 bg-stone-50 rounded-lg border border-stone-200 hover:border-accent transition-colors">
+                <div className="mb-8 p-6 bg-white/40 backdrop-blur-xl rounded-3xl border border-white/60 hover:border-accent/40 shadow-sm transition-colors">
                   <p className="text-sm font-semibold text-stone-600 mb-4 uppercase tracking-wide">Social Media</p>
                   <div className="flex gap-4">
                     <a
@@ -227,7 +227,7 @@ export default function Contact() {
               </div>
 
               {/* Response Time */}
-              <div className="p-6 bg-accent/5 border border-accent rounded-lg">
+              <div className="p-6 bg-accent/5 backdrop-blur-xl border border-accent/20 rounded-3xl">
                 <p className="text-sm text-stone-600 font-light leading-relaxed">
                   <span className="font-semibold text-stone-900">Quick Response:</span> I typically respond to inquiries within 24 hours. Let&apos;s discuss how I can help bring your vision to life.
                 </p>

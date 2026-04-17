@@ -63,7 +63,7 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="services"
-      className={`py-24 px-6 bg-stone-50 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-transparent transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -79,7 +79,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className={`p-8 bg-white rounded-lg border border-stone-200 hover:border-accent hover:shadow-lg transition-all duration-500 ${
+              className={`p-8 bg-white/40 backdrop-blur-xl rounded-3xl border border-white/60 hover:border-accent/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -103,7 +103,7 @@ export default function Services() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-20 p-8 bg-white border border-stone-200 rounded-lg">
+        <div className="mt-20 p-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <h3 className="text-2xl font-serif font-bold text-stone-900 mb-4">
             Custom Projects
           </h3>
