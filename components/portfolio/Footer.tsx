@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Linkedin, Instagram, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -55,22 +55,13 @@ export default function Footer() {
             <h4 className="font-semibold uppercase tracking-widest text-sm mb-6">Connect</h4>
             <div className="flex gap-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anya-pathak-627a76402/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-stone-400 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="mailto:anyapathak01@gmail.com"
