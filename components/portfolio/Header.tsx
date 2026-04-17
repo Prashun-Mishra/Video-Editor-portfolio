@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Linkedin, Instagram, Menu, X } from 'lucide-react';
+import { Linkedin, Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,22 +13,13 @@ export default function Header() {
         {/* Left - Social Icons */}
         <div className="flex items-center gap-4 md:gap-6">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/anya-pathak-627a76402/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-stone-600 hover:text-accent transition-colors duration-300"
             aria-label="LinkedIn"
           >
             <Linkedin size={20} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-stone-600 hover:text-accent transition-colors duration-300"
-            aria-label="Instagram"
-          >
-            <Instagram size={20} />
           </a>
         </div>
 
