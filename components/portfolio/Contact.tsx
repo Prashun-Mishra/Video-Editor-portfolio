@@ -13,6 +13,7 @@ export default function Contact() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,15 +40,34 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would send the form data to your backend
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: '', email: '', project: '', message: '' });
-    }, 3000);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', project: '', message: '' });
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 5000);
+      } else {
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again later.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -148,10 +168,11 @@ export default function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-stone-900 text-white font-medium hover:bg-stone-800 transition-all duration-300 rounded-sm flex items-center justify-center gap-2 group"
+                disabled={isLoading}
+                className="w-full px-6 py-3 bg-stone-900 text-white font-medium hover:bg-stone-800 transition-all duration-300 rounded-sm flex items-center justify-center gap-2 group disabled:bg-stone-500 disabled:cursor-not-allowed"
               >
-                Send Message
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                {isLoading ? 'Sending...' : 'Send Message'}
+                {!isLoading && <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}
               </button>
 
               {/* Success Message */}
