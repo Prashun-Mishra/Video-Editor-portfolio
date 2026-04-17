@@ -48,13 +48,6 @@ const portfolioItems: PortfolioItem[] = [
     image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop',
     duration: '1:00',
   },
-  {
-    id: 6,
-    title: 'Podcast Full Episode',
-    category: 'Long-form Video',
-    image: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=600&fit=crop',
-    duration: '25:00',
-  },
 ];
 
 export default function Portfolio() {
@@ -83,13 +76,9 @@ export default function Portfolio() {
     <section
       ref={sectionRef}
       id="portfolio"
-      className={`relative py-24 px-6 bg-stone-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-24 px-6 bg-white transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
-      {/* Decorative blobs for glassmorphism backdrop */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-stone-200/50 rounded-full blur-3xl pointer-events-none" />
-
-      <div className="relative max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">My Work</p>
@@ -99,17 +88,17 @@ export default function Portfolio() {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioItems.map((item, index) => (
             <div
               key={item.id}
-              className={`group cursor-pointer p-4 rounded-2xl bg-white/40 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500 ${
+              className={`group cursor-pointer transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-xl aspect-square bg-stone-100">
+              <div className="relative overflow-hidden rounded-lg aspect-square bg-stone-100">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -129,7 +118,7 @@ export default function Portfolio() {
               </div>
 
               {/* Info */}
-              <div className="mt-6 px-2 pb-2">
+              <div className="mt-6">
                 <p className="text-xs font-semibold text-accent uppercase tracking-wide mb-2">
                   {item.category}
                 </p>
