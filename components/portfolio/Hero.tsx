@@ -27,7 +27,8 @@ export default function Hero() {
 
         {/* Description */}
         <p className="max-w-2xl mx-auto text-lg text-stone-500 mb-12 leading-relaxed font-light">
-          I specialize in transforming raw footage into compelling visual stories. From Instagram Reels to YouTube edits, I create content that captivates and converts.
+          I transform raw footage into clean, engaging videos for social media and YouTube.<br/>
+          <span className="font-medium text-stone-600 mt-2 block">Growing editor + high effort + affordable</span>
         </p>
 
         {/* CTA Button */}

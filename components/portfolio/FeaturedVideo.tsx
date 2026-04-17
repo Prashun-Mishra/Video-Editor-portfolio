@@ -84,15 +84,8 @@ export default function FeaturedVideo() {
             Creative Storytelling Through Motion
           </h3>
           <p className="text-stone-600 leading-relaxed font-light mb-8">
-            This is a showcase of my recent work featuring color grading, pacing, and sound design that brings the narrative to life. Each frame is carefully crafted to create an emotional connection with the viewer.
+            A showcase of my recent editing work focusing on clean visuals, pacing, and engaging storytelling.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <span className="text-sm text-stone-500 font-light">✓ Professional Grade</span>
-            <span className="hidden sm:block text-stone-300">·</span>
-            <span className="text-sm text-stone-500 font-light">✓ Custom Sound Design</span>
-            <span className="hidden sm:block text-stone-300">·</span>
-            <span className="text-sm text-stone-500 font-light">✓ Premium Color Grading</span>
-          </div>
         </div>
       </div>
     </section>

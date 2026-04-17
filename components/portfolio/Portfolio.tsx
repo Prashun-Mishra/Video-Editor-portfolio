@@ -15,45 +15,38 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'Influencer Reel Montage',
+    title: 'Instagram Reel Edit (Trending Style)',
     category: 'Instagram Reels',
     image: 'https://images.unsplash.com/photo-1635914362033-60ad81dcd203?w=600&h=600&fit=crop',
     duration: '0:15',
   },
   {
     id: 2,
-    title: 'Product Launch Video',
+    title: 'YouTube Short Edit',
     category: 'YouTube Edits',
     image: 'https://images.unsplash.com/photo-1634697040565-0ca3d0c7e2d6?w=600&h=600&fit=crop',
-    duration: '2:34',
-  },
-  {
-    id: 3,
-    title: 'Fashion Before & After',
-    category: 'Photo Editing',
-    image: 'https://images.unsplash.com/photo-1595670553886-a4fe60b67a60?w=600&h=600&fit=crop',
-    duration: 'Edit',
-  },
-  {
-    id: 4,
-    title: 'Travel Vlog Highlights',
-    category: 'YouTube Edits',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=600&fit=crop',
-    duration: '5:12',
-  },
-  {
-    id: 5,
-    title: 'Music Video Teaser',
-    category: 'Short-form Content',
-    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop',
     duration: '0:30',
   },
   {
-    id: 6,
-    title: 'Product Showcase',
-    category: 'Photo Editing',
-    image: 'https://images.unsplash.com/photo-1596557609827-d5e8bd49f5ba?w=600&h=600&fit=crop',
-    duration: 'Edit',
+    id: 3,
+    title: 'Before & After Video Edit',
+    category: 'Video Editing',
+    image: 'https://images.unsplash.com/photo-1595670553886-a4fe60b67a60?w=600&h=600&fit=crop',
+    duration: '0:45',
+  },
+  {
+    id: 4,
+    title: 'Social Media Promo Edit',
+    category: 'Short-form Content',
+    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=600&fit=crop',
+    duration: '0:20',
+  },
+  {
+    id: 5,
+    title: 'Content Highlight Edit',
+    category: 'Highlight Reel',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop',
+    duration: '1:00',
   },
 ];
 
@@ -90,7 +83,7 @@ export default function Portfolio() {
         <div className="mb-16">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">My Work</p>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mt-4">
-            Featured Projects
+            Sample Work
           </h2>
         </div>
 

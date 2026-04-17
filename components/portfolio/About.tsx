@@ -41,31 +41,35 @@ export default function About() {
         {/* Content */}
         <div className="space-y-6 text-lg text-stone-600 leading-relaxed">
           <p className="font-light">
-            With over 5 years of experience in video editing and visual storytelling, I&apos;ve helped creators and brands bring their vision to life. My expertise spans from short-form social media content to long-form documentary-style edits.
+            I am a passionate Video Editor and Photo Editor focused on creating engaging and high-quality content for creators and small businesses.
           </p>
 
           <p className="font-light">
-            I believe that great editing is invisible—it enhances the story without distracting from the message. Whether you need polished YouTube edits, engaging Instagram Reels, or professional photo retouching, I deliver work that drives results.
+            I specialize in editing Instagram Reels, YouTube videos, and short-form content using modern editing techniques, transitions, and storytelling.
           </p>
 
           <p className="font-light">
-            Currently based in India, I work with creators worldwide, bringing a blend of technical excellence and creative vision to every project.
+            As a growing freelancer, I am continuously improving my skills and staying updated with current trends to deliver content that captures attention and increases engagement.
+          </p>
+
+          <p className="font-light">
+            I aim to provide clean, professional edits with a strong focus on detail and client satisfaction.
           </p>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-stone-200">
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">50+</p>
-            <p className="text-sm text-stone-500 font-light">Creators Helped</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">200+</p>
+            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">20+</p>
             <p className="text-sm text-stone-500 font-light">Projects Completed</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">5M+</p>
-            <p className="text-sm text-stone-500 font-light">Total Reach</p>
+            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">10+</p>
+            <p className="text-sm text-stone-500 font-light">Creators Worked With</p>
+          </div>
+          <div className="text-center">
+            <p className="text-3xl font-serif font-bold text-stone-900 mb-2">100K+</p>
+            <p className="text-sm text-stone-500 font-light">Content Reach (Est.)</p>
           </div>
         </div>
       </div>

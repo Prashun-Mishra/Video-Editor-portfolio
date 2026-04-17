@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Linkedin, Instagram, ArrowRight } from 'lucide-react';
+import { Mail, Linkedin, ArrowRight } from 'lucide-react';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -84,7 +84,7 @@ export default function Contact() {
             Let&apos;s Work Together
           </h2>
           <p className="text-lg text-stone-600 mt-6 font-light max-w-2xl mx-auto">
-            Have a project in mind? I&apos;d love to hear about it. Fill out the form below or reach out directly.
+            Open to freelance projects and collaborations.
           </p>
         </div>
 
@@ -214,22 +214,13 @@ export default function Contact() {
                   <p className="text-sm font-semibold text-stone-600 mb-4 uppercase tracking-wide">Social Media</p>
                   <div className="flex gap-4">
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/anya-pathak-627a76402/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-stone-900 hover:text-accent transition-colors"
                     >
                       <Linkedin className="w-5 h-5" />
                       LinkedIn
-                    </a>
-                    <a
-                      href="https://instagram.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-stone-900 hover:text-accent transition-colors"
-                    >
-                      <Instagram className="w-5 h-5" />
-                      Instagram
                     </a>
                   </div>
                 </div>

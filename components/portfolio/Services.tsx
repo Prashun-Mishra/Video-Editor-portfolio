@@ -13,26 +13,26 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: 'Reels Editing',
-    description: 'Fast-paced, trend-focused Instagram Reels that drive engagement and grow your audience.',
+    title: 'Instagram Reels Editing',
+    description: 'Create engaging, trend-based reels that capture attention.',
     icon: <Smartphone className="w-8 h-8" />,
   },
   {
     id: 2,
     title: 'YouTube Editing',
-    description: 'Professional YouTube videos with seamless cuts, transitions, and color grading.',
+    description: 'Clean, professional edits with smooth transitions and pacing.',
     icon: <Film className="w-8 h-8" />,
   },
   {
     id: 3,
     title: 'Short-form Content',
-    description: 'Viral-ready content for TikTok, Instagram Shorts, and YouTube Shorts.',
+    description: 'High-retention content optimized for social platforms.',
     icon: <Zap className="w-8 h-8" />,
   },
   {
     id: 4,
     title: 'Photo Editing',
-    description: 'Professional retouching, color correction, and image enhancement for all platforms.',
+    description: 'Basic retouching, color correction, and enhancement.',
     icon: <ImageIcon className="w-8 h-8" />,
   },
 ];
