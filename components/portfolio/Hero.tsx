@@ -32,16 +32,24 @@ export default function Hero() {
         </p>
 
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
           <Link
             href="#portfolio"
-            className="px-8 py-3 text-base font-medium text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 hover:scale-105 rounded-sm"
+            className="px-8 py-3 text-base font-medium text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 hover:scale-105 rounded-sm shrink-0"
           >
             View My Work
           </Link>
+          <a
+            href="/DOC-20260418-WA0012. (1).pdf"
+            download="Resume_Video_Editor.pdf"
+            className="px-8 py-3 text-base font-medium text-white bg-accent hover:bg-accent/90 transition-all duration-300 hover:scale-105 rounded-sm shrink-0 shadow-md hover:shadow-lg flex items-center gap-2"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+            Download Resume
+          </a>
           <Link
             href="#contact"
-            className="px-8 py-3 text-base font-medium text-stone-900 border border-stone-900 hover:bg-stone-900 hover:text-white transition-all duration-300 rounded-sm"
+            className="px-8 py-3 text-base font-medium text-stone-900 border border-stone-900 hover:bg-stone-900 hover:text-white transition-all duration-300 rounded-sm shrink-0"
           >
             Let&apos;s Collaborate
           </Link>
